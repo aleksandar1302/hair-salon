@@ -9,6 +9,7 @@
         <title>Hair Beauty Shop Marko Pantic</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="styles/img/mppmin.jpg">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/css/style.css" type="text/css">
@@ -27,19 +28,19 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><img src="http://img.findpatent.ru/128/1281993-s.jpg" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="styles/img/mppmin.jpg"alt=""></a>
               </div>
           
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">O Nama</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li class="active" id="oNama"><a href="#">O Nama</a></li>
+                    <li id="Kontakt"><a href="#"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Kontakt</a></li>
                 </ul>
                 
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Ponude</a></li>
-                   
+                  <li><a href="#">Cenovnik</a></li>
+                  <li><a href="#">Edukacija</a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
@@ -50,7 +51,7 @@
                 <div class="image">
                     <img src="styles/img/mp1.jpg" alt="" class="responsive">
                 </div>
-                <div class="row">
+                <div class="row about" id="onama">
                     <h1>O nama</h1>
                     <div class="col-lg-4">
                         <img src="https://opportunity180.org/wp-content/uploads/2017/10/image-placeholder.svg" alt="" class="img-circle center">
@@ -66,25 +67,22 @@
                     </div>
                 </div>
                 <div class="row">
-                        <div class="col-lg-4 col-sm-6">
+                        <div class="col-lg-12">
                             <div class="thumbnail">
                                 <img src="http://i.imgur.com/qK42fUu.jpg" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6">
-                                <div class="thumbnail">
-                                    <img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="">
-                                </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                                <div class="thumbnail">
-                                    <img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450" alt="">
-                                </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h1>Kontakt</h1>
-                       <div class="map-responsive">
+                </div>
+                    <div class="row" id="kontakt">
+                        <div class="col-lg-6 col-sm-12">
+                            <h1>Kontakt</h1>
+                            <ul>
+                                <li>Adresa: Baba Visnjina 35</li>
+                                <li>Telefon: 011/3456789</li>
+                                <li>Radno vreme: 13:00 - 20:00</li>
+                            </ul>   
+                        </div> 
+                       <div class="col-lg-6 col-sm-12 map-responsive">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1415.4897270562426!2d20.473178259862923!3d44.80160735589265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7075500dd563%3A0x5538b47f7b9f722d!2sHair+Beauty+Shop+Marko+Panti%C4%87!5e0!3m2!1ssr!2srs!4v1537961249958" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                        </div>     
                     </div>
@@ -107,6 +105,8 @@
 
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="styles/js/script.js"></script>
     </body>
 </html>
