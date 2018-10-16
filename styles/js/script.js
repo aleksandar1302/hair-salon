@@ -12,3 +12,7 @@ $(document).ready(function (){
         }, 2000);
     });
 });
+$( '.navbar-nav li a' ).on("click", function(){
+    $('#hamburger-menu').click();
+  });
+  

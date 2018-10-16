@@ -2,8 +2,13 @@ html, body{
     height: 100%;
     width:100%;
     color: #680000;
-    font-family: "BlissPro ExtraLight", "Gill Sans", "Helvetica Neue", Arial, sans-serif;
-    font-feature-settings: "kern", "liga", "pnum";
+    font-family: 'Bliss Pro';
+	src: url('BlissPro-Light.eot');
+	src: url('BlissPro-Light.eot?#iefix') format('embedded-opentype'),
+		url('BlissPro-Light.woff') format('woff'),
+		url('BlissPro-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
     font-size: 1em;
     line-height: 1.5;
 }
@@ -101,6 +106,7 @@ margin-bottom: 12%;
     margin-bottom:5%;
 }
 
+
 .navbar-default .navbar-nav>.active>a{
     color:#680000;
 }
@@ -131,4 +137,15 @@ margin-bottom: 12%;
 
 .navbar-default .navbar-nav>.active>a:focus{
     color:#680000;
+}
+.thumbnail img{
+    height: 100%;
+    width: 100%;
+}
+.listContact{
+    list-style: none;
+}
+
+.listContact a img {
+    margin-left: 5%;
 }
