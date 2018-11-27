@@ -162,26 +162,30 @@ margin-bottom: 12%;
     text-transform: uppercase;
     letter-spacing: 0.4em;
 }
-#cenovnik-tabela{
+#table{
+    border:2px solid #680000;
     width:80%;
-    border:1px solid #680000;
-    margin: 0 10%;
+    margin:0 10%;
 }
-.markoIstef{
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-bottom: 2%;
-    font-size: 18px;
+#table th{
+    width:33.33%;
 }
-.single-tr{
+#table td{
+    width:33.33%;
+    margin-bottom: 20%;
     text-align: center;
-    font-weight: bold;
-    padding-bottom: 2%;
-    font-size: 18px;
+    border-bottom: 2px solid #680000;
 }
-.single-td{
+.ime{
     text-align: center;
+    font-size: 1.8em;
 }
-.last-td{
-    padding-bottom: 2px;
+.pic-price {
+    margin-left: 27%;
+    margin-top:7%;
+    margin-bottom: 8%;
+    object-fit:scale-down;
+}
+#legenda{
+    margin: 2% 0 1% 7%;
 }
