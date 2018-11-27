@@ -156,3 +156,32 @@ margin-bottom: 12%;
 .carousel-control.right {
     background-image: none
 }
+#cenovnik{
+    text-align: center;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+}
+#cenovnik-tabela{
+    width:80%;
+    border:1px solid #680000;
+    margin: 0 10%;
+}
+.markoIstef{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 2%;
+    font-size: 18px;
+}
+.single-tr{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 2%;
+    font-size: 18px;
+}
+.single-td{
+    text-align: center;
+}
+.last-td{
+    padding-bottom: 2px;
+}
