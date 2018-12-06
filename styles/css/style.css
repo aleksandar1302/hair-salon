@@ -84,9 +84,11 @@ html, body{
     border: 0; 
 }
 .center{
-margin-left: 27%;
-margin-top:7%;
-margin-bottom: 12%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:7%;
+    margin-bottom: 12%;
 }
 
 .navbar-brand {
@@ -162,30 +164,45 @@ margin-bottom: 12%;
     text-transform: uppercase;
     letter-spacing: 0.4em;
 }
-#table{
+.table{
     border:2px solid #680000;
     width:80%;
-    margin:0 10%;
+    margin:5% 10%;
 }
-#table th{
-    width:33.33%;
+.table th{
+    max-width:33.33%;
 }
-#table td{
+.table td{
     width:33.33%;
     margin-bottom: 20%;
     text-align: center;
     border-bottom: 2px solid #680000;
+    border-top:none;
 }
 .ime{
     text-align: center;
     font-size: 1.8em;
 }
-.pic-price {
-    margin-left: 27%;
+
+.marko{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top:7%;
     margin-bottom: 8%;
-    object-fit:scale-down;
+}
+.stefan{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:7%;
+    margin-bottom: 8%;
 }
 #legenda{
     margin: 2% 0 1% 7%;
+}
+.muski{
+    margin-top:0;
+    margin-bottom: 0;
+    width:80%;
 }
