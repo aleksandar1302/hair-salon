@@ -231,12 +231,12 @@ html, body{
     height: 100%;
     padding-top:10%;
     padding-bottom: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 #uvod{
     padding-top: 5%;
-    text-align: justify;
+    text-align: center;
     font-size: 1.2 em;
     line-height: 1.5;
 }
