@@ -29,30 +29,17 @@ $(".nav li").on("click", function() {
     $(this).addClass("active");
   });
 
-  $(function(){
-      var slides=$('.slideShow>li');
-      var slideCount=0;
-      var totalSlides=slides.length;
-      var slideCache=[];
-
-      (function preloader(){
-          if(slideCount<totalSlides){
-              slideCache[slideCount]=new Image();
-              slideCache[slideCount].src=slides.eq(slideCount).find('img').attr('src');
-              slideCache[slideCount].onload=function(){
-                  slideCount++;
-                  preloader();
-              }
-          }else{
-              slideCount=0;
-              slideShow();
-          }
-      }());
-
-      function slideShow(){
-          slides.eq(slideCount).fadeIn(1000).delay(2000).fadeOut(1000, function(){
-              slideCount<totalSlides-1 ? slideCount++ : slideCount=0;
-              slideShow();
-          });
-      }
-  });
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+  }
