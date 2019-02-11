@@ -28,3 +28,8 @@ $(".nav li").on("click", function() {
     $(".nav li").removeClass("active");
     $(this).addClass("active");
   });
+$(document).ready(function() {
+$('.image').cycle({
+	fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+});
