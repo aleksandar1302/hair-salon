@@ -30,28 +30,28 @@ $(".nav li").on("click", function() {
   });
 
   $(function(){
-      var slides=$('.slideshow>li');
-      var slidecount=0;
+      var slides=$('.slideShow>li');
+      var slideCount=0;
       var totalSlides=slides.length;
       var slideCache=[];
 
       (function preloader(){
-          if(slidecount<totalSlides){
-              slideCache[slidecount]=new Image();
-              slideCache[slidecount].src=slides.eq(slidecount).find('img').attr('src');
-              slideCache[slidecount].onload=function(){
-                  slidecount++;
+          if(slideCount<totalSlides){
+              slideCache[slideCount]=new Image();
+              slideCache[slideCount].src=slides.eq(slideCount).find('img').attr('src');
+              slideCache[slideCount].onload=function(){
+                  slideCount++;
                   preloader();
               }
           }else{
-              slidecount=0;
+              slideCount=0;
               slideShow();
           }
       }());
 
       function slideShow(){
-          slides.eq(slidecount).fadeIn(1000).delay(2000).fadeOut(1000, function(){
-              slidecount<totalSlides-1 ? slidecount++ : slidecount=0;
+          slides.eq(slideCount).fadeIn(1000).delay(2000).fadeOut(1000, function(){
+              slideCount<totalSlides-1 ? slideCount++ : slideCount=0;
               slideShow();
           });
       }
