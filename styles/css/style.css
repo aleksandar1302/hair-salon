@@ -367,15 +367,15 @@ h3{
 .hidden{
     display: none;
 }
-.btn-group-justified a{
+.btn-group a{
     background-color: #680000;
     color: #fff;
 }
-.btn-group-justified a:hover{
+.btn-group a:hover{
     background-color: #680000;
     color: #fff;
 }
-.btn-group-justified a:active{
+.btn-group a:active{
     background-color: #680000;
     color: #fff;
 }
@@ -393,7 +393,4 @@ h3{
 }
 .btn-group{
     width:20%;
-    height:auto;
-    text-align: center;
-    vertical-align: middle;   
 }
