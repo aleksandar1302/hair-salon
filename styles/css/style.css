@@ -187,21 +187,7 @@ html, body{
 #legenda{
     margin: 2% 0 1% 7%;
 }
-.tabela{
-    margin:5% 10%;
-    width:80%;
-}
-.tabela.table th{
-    max-width:33.33%;
-}
-.tabela.table td{
-    width:33.33%;
-    margin-bottom: 20%;
-    text-align: center;
-    border-bottom: 2px solid #680000;
-    border-top:none;
-    vertical-align:middle;
-}
+
 #zenski{
     width:80%;
     margin:5% 10%;
@@ -210,6 +196,51 @@ html, body{
     max-width:33.33%;
 }
 #zenski.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
+#muski{
+    width:80%;
+    margin:5% 10%;
+}
+#muski.table th{
+    max-width:33.33%;
+}
+#muski.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
+#zenskoSisanje{
+    width:80%;
+    margin:5% 10%;
+}
+#zenskoSisanje.table th{
+    max-width:33.33%;
+}
+#zenskoSisanje.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
+#muskoSisanje{
+    width:80%;
+    margin:5% 10%;
+}
+#muskoSisanje.table th{
+    max-width:33.33%;
+}
+#muskoSisanje.table td{
     width:33.33%;
     margin-bottom: 20%;
     text-align: center;
