@@ -248,6 +248,96 @@ html, body{
     border-top:none;
     vertical-align:middle;
 }
+#muskoFarbanje{
+    width:80%;
+    margin:5% 10%;
+}
+#muskoFarbanje.table th{
+    max-width:33.33%;
+}
+#muskoFarbanje.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
+#zenskoFarbanje{
+    width:80%;
+    margin:5% 10%;
+}
+#zenskoFarbanje.table th{
+    max-width:33.33%;
+}
+#zenskoFarbanje.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
+#zenskaKombinacija{
+    width:80%;
+    margin:5% 10%;
+}
+#zenskaKombinacija.table th{
+    max-width:33.33%;
+}
+#zenskaKombinacija.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
+#muskaKombinacija{
+    width:80%;
+    margin:5% 10%;
+}
+#muskaKombinacija.table th{
+    max-width:33.33%;
+}
+#muskaKombinacija.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
+#nega{
+    width:80%;
+    margin:5% 10%;
+}
+#nega.table th{
+    max-width:33.33%;
+}
+#nega.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
+#hemijskiTretmani{
+    width:80%;
+    margin:5% 10%;
+}
+#hemijskiTretmani.table th{
+    max-width:33.33%;
+}
+#hemijskiTretmani.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
