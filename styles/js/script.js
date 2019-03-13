@@ -43,3 +43,12 @@ $(".nav li").on("click", function() {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 9000);    
   }
+
+function prikazMfriz(){
+    var x=document.getElementById('muskiSis');
+    x.classList.toggle('hidden');
+}
+function prikazMfar(){
+    var x=document.getElementById('muskiFar');
+    x.classList.toggle('hidden');
+}

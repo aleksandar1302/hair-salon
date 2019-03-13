@@ -1,5 +1,5 @@
 html, body{
-    height: auto;
+    height: 100%;
     width:100%;
     color: #680000;
     font-family: 'Bliss Pro';
@@ -14,7 +14,7 @@ html, body{
 }
 
 .content{
-    height:auto;
+    min-height:100%;
     margin-top:50px;
 }
 
@@ -187,14 +187,14 @@ html, body{
 #legenda{
     margin: 2% 0 1% 7%;
 }
-#muski{
+.tabela{
     margin:5% 10%;
     width:80%;
 }
-#muski.table th{
+.tabela.table th{
     max-width:33.33%;
 }
-#muski.table td{
+.tabela.table td{
     width:33.33%;
     margin-bottom: 20%;
     text-align: center;
@@ -242,4 +242,27 @@ html, body{
 }
 h3{
     text-align: center;
+}
+.hidden{
+    display: none;
+}
+.btn-group-justified a{
+    background-color: #680000;
+    color: #fff;
+}
+.btn-group-justified a:hover{
+    background-color: #680000;
+    color: #fff;
+}
+.btn-group-justified a:active{
+    background-color: #680000;
+    color: #fff;
+}
+.btn-group .dropdown-menu li a{
+    background-color: #680000;
+    color: #fff;
+}
+.btn-group .dropdown-menu li a:hover{
+    background-color: #680000;
+    color: #fff;
 }

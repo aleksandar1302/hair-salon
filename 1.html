@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hair Beauty Shop Marko Pantic</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="styles/img/mppmin.jpg">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/css/style.css" type="text/css">
+        <script type="text/javascript">
+            function hideAll(){
+            document.getElementById("muskoSisanje").classList.add('hidden');
+            document.getElementById("muskoFarbanje").classList.add('hidden');
+            document.getElementById("zenskoSisanje").classList.add('hidden');
+            document.getElementById("zenskoFarbanje").classList.add('hidden');
+            document.getElementById("hemijskiTretmani").classList.add('hidden');
+            document.getElementById("nega").classList.add('hidden');
+            document.getElementById("muskaKombinacija").classList.add('hidden');
+            document.getElementById("zenskaKombinacija").classList.add('hidden');
+            document.getElementById("nadogradnja").classList.add('hidden');
+            document.getElementById('legenda').classList.add('hidden');  
+            }
+            function show(elementId) { 
+                hideAll();
+                document.getElementById(elementId).classList.remove('hidden');
+                document.getElementById('legenda').classList.remove('hidden');
+            }
+            </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" id="hamburger-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" id="pocetna"><img src="styles/img/mppmin.jpg"alt=""></a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li href=""><a href="index.html">O Nama</a></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>Kontakt</a></li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="cenovnik.html">Cenovnik</a></li>
+                  <li><a href="edukacija.html">Edukacija</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="content">
+            
+            <div class="container">
+                <h1 id="cenovnik">Cenovnik</h1>
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <div class="btn-group" role="group">
+                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Sisanje
+                          <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#" onclick="show('zenskoSisanje');">Dame</a></li>
+                          <li><a href="#" onclick="show('muskoSisanje');">Gospoda</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Kolor
+                          <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#" onclick="show('zenskoFarbanje');">Dame</a></li>
+                          <li><a href="#" onclick="show('muskoFarbanje');">Gospoda</a></li>
+                        </ul>
+                    </div>
+                    <a type="button" class="btn btn-default btn-group" role="group" onclick="show('hemijskiTretmani');">Hemijski Tretmani</a>
+                    <a type="button" class="btn btn-default btn-group" role="group" onclick="show('nega')">Nega</a>
+                  
+                    <div class="btn-group" role="group">
+                      <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tretmani + Sisanje
+                        <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#" onclick="show('zenskaKombinacija')">Dame</a></li>
+                        <li><a href="#" onclick="show('muskaKombinacija')">Gospoda</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                <!--musko sisanje-->
+                
+                <table id="muskoSisanje" class="tabela table responsive" style="overflow-x:auto;">
+                <thead>
+                    <tr id="prvi">
+                        <th></th>
+                        <th scope="col">
+                            <p class="ime">Marko</p>
+                        </th>
+                        <th scope="col">
+                            <p class="ime">Stefan</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Muško šišanje + feniranje</td>
+                    <td>2600.-</td>
+                    <td>2300.-</td>
+                </tr>
+                <tr>
+                    <td>Šišanje za decu</td>
+                    <td>1800.-</td>
+                    <td>1500.-</td>
+                </tr>
+                <tr>
+                    <td>Muško feniranje + pranje sa masažom glave + nega + styling proizvodi - kratka kosa</td>
+                    <td>600.-</td>
+                    <td>600.-</td>
+                </tr>
+                <tr>
+                    <td>Muško feniranje + pranje sa masažom glave + nega + styling proizvodi - srednja kosa</td>
+                    <td>1000.-</td>
+                    <td>1000.-</td>
+                </tr>
+                <tr>
+                    <td>Štucovanje brade</td>
+                    <td>600.-</td>
+                    <td>600.-</td>
+                </tr>
+                <tr>
+                    <td>Štucovanje brade i brijanje detalja</td>
+                    <td>900.-</td>
+                    <td>900.-</td>
+                </tr>
+                <tr>
+                    <td>Brijanje</td>
+                    <td>1200.-</td>
+                    <td>1200.-</td>
+                </tr>
+            </tbody>
+        </table>
+        
+                <!--musko farbanje-->
+                <table id="muskoFarbanje" class="tabela table responsive" style="overflow-x:auto;">
+                    <thead>
+                        <tr id="prvi">
+                            <th></th>
+                            <th scope="col">
+                                <p class="ime">Marko</p>
+                            </th>
+                            <th scope="col">
+                                <p class="ime">Stefan</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>Farbanje “flash back”</td>
+                    <td>1000.-</td>
+                    <td>1000.-</td>
+                </tr>
+                <tr>
+                    <td>Farbanje “pun kolor”</td>
+                    <td>2000.-</td>
+                    <td>2000.-</td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+                <!--musko kombinacije-->
+                <table id="muskaKombinacija" class="tabela table responsive" style="overflow-x:auto;">
+                    <thead>
+                        <tr id="prvi">
+                            <th></th>
+                            <th scope="col">
+                                <p class="ime">Marko</p>
+                            </th>
+                            <th scope="col">
+                                <p class="ime">Stefan</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>Muško šišanje + farbanje “flash back“</td>
+                    <td>3500.-</td>
+                    <td>3500.-</td>
+                </tr>
+                <tr>
+                    <td>Muško šišanje + farbanje “ pun kolor”</td>
+                    <td>4500.-</td>
+                    <td>4500.-</td>
+                </tr>
+            </tbody>
+        </table>
+
+                <!--nadogradnja-->
+                <table id="nadogradnja" class="tabela table responsive" style="overflow-x:auto;">
+                    <thead>
+                        <tr id="prvi">
+                            <th></th>
+                            <th scope="col">
+                                <p class="ime">Marko</p>
+                            </th>
+                            <th scope="col">
+                                <p class="ime">Stefan</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>Nadogradnja kose: ( sa donetom kosom) - do 50 pramenova po komadu</td>
+                    <td>250.-</td>
+                    <td>250.-</td>
+                </tr>
+                <tr>
+                    <td>Nadogradnja kose: ( sa donetom kosom) - posle 50-tog pramena po komadu:</td>
+                    <td>100.-</td>
+                    <td>100.-</td>
+                </tr>
+            </tbody>
+        </table>
+                <!--Zensko sisanje-->
+                <table id="zenskoSisanje" class="tabela table responsive" style="overflow-x:auto;">
+                    <thead>
+                        <tr id="prvi">
+                            <th></th>
+                            <th scope="col">
+                                <p class="ime">Marko</p>
+                            </th>
+                            <th scope="col">
+                                <p class="ime">Stefan</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>Žensko šišanje + feniranje</td>
+                    <td>3600.-</td>
+                    <td>3200.-</td>
+                </tr>
+                <tr>
+                    <td>Žensko feniranje + pranje sa masažom glave + nega + styling proizvodi - kratka kosa</td>
+                    <td>1000.-</td>
+                    <td>1000.-</td>
+                </tr>
+                <tr>
+                    <td>Žensko feniranje + pranje sa masažom glave + nega + styling proizvodi - srednja kosa</td>
+                    <td>1300.-</td>
+                    <td>1300.-</td>
+                </tr>
+                <tr>
+                    <td>Žensko feniranje + pranje sa masažom glave + nega + styling proizvodi - duga kosa</td>
+                    <td>1500.-</td>
+                    <td>1500.-</td>
+                </tr>
+            </tbody>
+        </table>
+                <!--Hemijski tretmani-->
+                <table id="hemijskiTretmani" class="tabela table responsive" style="overflow-x:auto;">
+                    <thead>
+                        <tr id="prvi">
+                            <th></th>
+                            <th scope="col">
+                                <p class="ime">Marko</p>
+                            </th>
+                            <th scope="col">
+                                <p class="ime">Stefan</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>KERATIN - brazilsko ispravljanje kose - srednja kosa</td>
+                    <td>9600.-</td>
+                    <td>9600.-</td>
+                </tr>
+                <tr>
+                    <td>KERATIN - brazilsko ispravljanje kose - duga kosa</td>
+                    <td>12000.-</td>
+                    <td>12000.-</td>
+                </tr>
+                <tr>
+                    <td>KERATIN - brazilsko ispravljanje kose - extra duga kosa</td>
+                    <td>14500.-</td>
+                    <td>14500.-</td>
+                </tr>
+                <tr>
+                    <td>MINI-VAL- keratinski + zaštita kose + feniranje + nega + styling - kratka kosa</td>
+                    <td>6000.-</td>
+                    <td>6000.-</td>
+                </tr>
+                <tr>
+                    <td>MINI-VAL- keratinski + zaštita kose + feniranje + nega + styling - srednja kosa</td>
+                    <td>8000.-</td>
+                    <td>8000.-</td>
+                </tr>
+                <tr>
+                    <td>MINI-VAL- keratinski + zaštita kose + feniranje + nega + styling - duga kosa</td>
+                    <td>10000.-</td>
+                    <td>10000.-</td>
+                </tr>
+            </tbody>
+        </table>
+
+                <!--Nega-->
+                <table id="nega" class="tabela table responsive" style="overflow-x:auto;">
+                    <thead>
+                        <tr id="prvi">
+                            <th></th>
+                            <th scope="col">
+                                <p class="ime">Marko</p>
+                            </th>
+                            <th scope="col">
+                                <p class="ime">Stefan</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>Koriščenje Olaplexa 1ml </td>
+                    <td>180.-</td>
+                    <td>180.-</td>
+                </tr>
+                <tr>
+                    <td>Koriščenje amino-komplex 1ml </td>
+                    <td>150.-</td>
+                    <td>150.-</td>
+                </tr>
+                <tr>
+                    <td>Intenzivni tretmani kose - Olaplex - kratka kosa</td>
+                    <td>2500.-</td>
+                    <td>2500.-</td>
+                </tr>
+                <tr>
+                    <td>Intenzivni tretmani kose - Olaplex - srednja kosa</td>
+                    <td>3500.-</td>
+                    <td>3500.-</td>
+                </tr>
+                <tr>
+                    <td>Intenzivni tretmani kose - Olaplex - duga kosa</td>
+                    <td>4500.-</td>
+                    <td>4500.-</td>
+                </tr>
+                <tr>
+                    <td>Intenzivni tretmani kose - Aminokoplex - kratka kosa</td>
+                    <td>2500.-</td>
+                    <td>2500.-</td>
+                </tr>
+                <tr>
+                    <td>Intenzivni tretmani kose - Aminokoplex - srednja kosa</td>
+                    <td>3500.-</td>
+                    <td>3500.-</td>
+                </tr>
+                <tr>
+                    <td>Intenzivni tretmani kose - Aminokoplex - duga kosa</td>
+                    <td>4500.-</td>
+                    <td>4500.-</td>
+                </tr>
+                <tr>
+                    <td>Sistem intenzivne nege kose sa olaplexom od 4 dolaska - kratka kosa</td>
+                    <td>8000.-</td>
+                    <td>8000.-</td>
+                </tr>
+                <tr>
+                    <td>Sistem intenzivne nege kose sa olaplexom od 4 dolaska - srednja kosa</td>
+                    <td>11000.-</td>
+                    <td>11000.-</td>
+                </tr>
+                <tr>
+                    <td>Sistem intenzivne nege kose sa olaplexom od 4 dolaska - duga kosa</td>
+                    <td>15000.-</td>
+                    <td>15000.-</td>
+                </tr>
+
+                <!--Zene farbanje-->
+                <table id="zenskoFarbanje" class="tabela table responsive" style="overflow-x:auto;">
+                    <thead>
+                        <tr id="prvi">
+                            <th></th>
+                            <th scope="col">
+                                <p class="ime">Marko</p>
+                            </th>
+                            <th scope="col">
+                                <p class="ime">Stefan</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>Farbanje izrasta + preliv ostatka + feniranje + nega + styling proizvodi - kratka kosa</td>
+                    <td>4500.-</td>
+                    <td>4500.-</td>
+                </tr>
+                <tr>
+                    <td>Farbanje izrasta + preliv ostatka + feniranje+nega + styling proizvodi - srednja kosa</td>
+                    <td>5000.-</td>
+                    <td>5000.-</td>
+                </tr>
+                <tr>
+                    <td>Farbanje izrasta + preliv ostatka + feniranje + nega + styling proizvodi - duga kosa</td>
+                    <td>5600.-</td>
+                    <td>5600.-</td>
+                </tr>
+                <tr>
+                    <td>Promene boje skidanje stare boje + izrada nove boje + intenzivna nega + feniranje + zaštita kose + styling - kratka kosa</td>
+                    <td>11000.-</td>
+                    <td>11000.-</td>
+                </tr>
+                <tr>
+                    <td>Promene boje skidanje stare boje + izrada nove boje + intenzivna nega + feniranje + zaštita kose + styling - srednja kosa</td>
+                    <td>12500.-</td>
+                    <td>12500.-</td>
+                </tr>
+                <tr>
+                    <td>Promene boje skidanje stare boje + izrada nove boje + intenzivna nega + feniranje + zaštita kose + styling - duga kosa</td>
+                    <td>14500.-</td>
+                    <td>14500.-</td>
+                </tr>
+
+                <!--zene kombinacija-->
+                <table id="zenskaKombinacija" class="tabela table responsive" style="overflow-x:auto;">
+                    <thead>
+                        <tr id="prvi">
+                            <th></th>
+                            <th scope="col">
+                                <p class="ime">Marko</p>
+                            </th>
+                            <th scope="col">
+                                <p class="ime">Stefan</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr>
+                    <td>Aktuelne tehnike pramenovi - balejaž - nijansiranje + preliv + nega + zaštita + feniranje + styling sa šišanjem - kratka kosa</td>
+                    <td>9200.-</td>
+                    <td>8900.-</td>
+                </tr>
+                <tr>
+                    <td>Aktuelne tehnike pramenovi - balejaž - nijansiranje + preliv + nega + zaštita + feniranje + styling sa šišanjem - srednja kosa</td>
+                    <td>10700.-</td>
+                    <td>10400.-</td>
+                </tr>
+                <tr>
+                    <td>Aktuelne tehnike pramenovi - balejaž - nijansiranje + preliv + nega + zaštita + feniranje + styling sa šišanjem - duga kosa</td>
+                    <td>12200.-</td>
+                    <td>11900.-</td>
+                </tr>
+                
+                <tr>
+                    <td>Promene boje skidanje stare boje + izrada nove boje + intenzivna nega + feniranje + zaštita kose + styling sa šišanjem - kratka kosa</td>
+                    <td>13600.-</td>
+                    <td>12300.-</td>
+                </tr>
+                <tr>
+                    <td>Promene boje skidanje stare boje + izrada nove boje + intenzivna nega + feniranje + zaštita kose + styling sa šišanjem - srednja kosa</td>
+                    <td>15100.-</td>
+                    <td>14800.-</td>
+                </tr>
+                <tr>
+                    <td>Promene boje skidanje stare boje + izrada nove boje + intenzivna nega + feniranje + zaštita kose + styling sa šišanjem - duga kosa</td>
+                    <td>17100.-</td>
+                    <td>16800.-</td>
+                </tr>
+                
+                
+                <tr>
+                    <td>MINI-VAL - keratinski + zaštita kose + feniranje + nega + styling sa šišanjem - kratka kosa </td>
+                    <td>8600.-</td>
+                    <td>8300.-</td>
+                </tr>
+                <tr>
+                    <td>MINI-VAL - keratinski + zaštita kose + feniranje + nega + styling sa šišanjem - srednja kosa</td>
+                    <td>10600.-</td>
+                    <td>10300.-</td>
+                </tr>
+                <tr>
+                    <td>MINI-VAL - keratinski + zaštita kose + feniranje + nega + styling sa šišanjem - duga kosa</td>
+                    <td>12600.-</td>
+                    <td>12300.-</td>
+                </tr>
+                </tbody>
+                </table>
+                    <div id="legenda">
+                        <ul>
+                            <li>Usluge koje nisu obuhvaćene cenovnikom određuje se po dogovoru</li>
+                            <li>Cenovnikom nisu predviđene cene za extra dugu i extra gustu kosu</li>
+                            <li>Sve cene su izražene u RSD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+            <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                               <div class="col-md-6 footer-copyright">
+                                
+                            </div>
+                               <div class="col-md-6 footer-social">
+                                
+                            </div>
+                           </div>
+                    </div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src="styles/js/script.js"></script>
+            <script type="text/javascript">
+                hideAll();
+            </script>
+        </body>
+    </html>
