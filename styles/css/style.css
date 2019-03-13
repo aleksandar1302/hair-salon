@@ -387,3 +387,13 @@ h3{
     background-color: #680000;
     color: #fff;
 }
+#cenovnikMeni{
+    width:80%;
+    margin:5% 10%;
+}
+.btn-group{
+    width:20%;
+    height:auto;
+    text-align: center;
+    vertical-align: middle;   
+}
