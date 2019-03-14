@@ -338,6 +338,21 @@ html, body{
     border-top:none;
     vertical-align:middle;
 }
+#nadogradnja{
+    width:80%;
+    margin:5% 10%;
+}
+#nadogradnja.table th{
+    max-width:33.33%;
+}
+#nadogradnja.table td{
+    width:33.33%;
+    margin-bottom: 20%;
+    text-align: center;
+    border-bottom: 2px solid #680000;
+    border-top:none;
+    vertical-align:middle;
+}
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */

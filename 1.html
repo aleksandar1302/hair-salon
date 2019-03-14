@@ -30,6 +30,9 @@
                 hideAll();
                 document.getElementById(elementId).classList.remove('hidden');
                 document.getElementById('legenda').classList.remove('hidden');
+                if(elementId==='zenskoSisanje'){
+                    document.getElementById('nadogradnja').classList.remove('hidden');
+                }
             }
             </script>
     </head>
@@ -124,19 +127,14 @@
                     <td>2300.-</td>
                 </tr>
                 <tr>
-                    <td>Šišanje za decu</td>
+                    <td>Musko sišanje za decu</td>
                     <td>1800.-</td>
                     <td>1500.-</td>
                 </tr>
                 <tr>
-                    <td>Muško feniranje + pranje sa masažom glave + nega + styling proizvodi - kratka kosa</td>
+                    <td>Muško feniranje</td>
                     <td>600.-</td>
                     <td>600.-</td>
-                </tr>
-                <tr>
-                    <td>Muško feniranje + pranje sa masažom glave + nega + styling proizvodi - srednja kosa</td>
-                    <td>1000.-</td>
-                    <td>1000.-</td>
                 </tr>
                 <tr>
                     <td>Štucovanje brade</td>
@@ -150,7 +148,7 @@
                 </tr>
                 <tr>
                     <td>Brijanje</td>
-                    <td>1200.-</td>
+                    <td>2000.-</td>
                     <td>1200.-</td>
                 </tr>
             </tbody>
@@ -162,7 +160,7 @@
                         <tr id="prvi">
                             <th></th>
                             <th scope="col">
-                                <p class="ime">Marko</p>
+                                <p class="ime">Ruzica</p>
                             </th>
                             <th scope="col">
                                 <p class="ime">Stefan</p>
@@ -190,10 +188,10 @@
                         <tr id="prvi">
                             <th></th>
                             <th scope="col">
-                                <p class="ime">Marko</p>
+                                <p class="ime">Marko/Ruzica</p>
                             </th>
                             <th scope="col">
-                                <p class="ime">Stefan</p>
+                                <p class="ime">Stefan/Ruzica</p>
                             </th>
                         </tr>
                     </thead>
@@ -204,39 +202,15 @@
                     <td>3500.-</td>
                 </tr>
                 <tr>
-                    <td>Muško šišanje + farbanje “ pun kolor”</td>
-                    <td>4500.-</td>
-                    <td>4500.-</td>
+                    <td>Muško šišanje + farbanje “pun kolor”</td>
+                    <td>4000.-</td>
+                    <td>4000.-</td>
                 </tr>
             </tbody>
         </table>
 
                 <!--nadogradnja-->
-                <table id="nadogradnja" class="tabela table responsive" style="overflow-x:auto;">
-                    <thead>
-                        <tr id="prvi">
-                            <th></th>
-                            <th scope="col">
-                                <p class="ime">Marko</p>
-                            </th>
-                            <th scope="col">
-                                <p class="ime">Stefan</p>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                <tr>
-                    <td>Nadogradnja kose: ( sa donetom kosom) - do 50 pramenova po komadu</td>
-                    <td>250.-</td>
-                    <td>250.-</td>
-                </tr>
-                <tr>
-                    <td>Nadogradnja kose: ( sa donetom kosom) - posle 50-tog pramena po komadu:</td>
-                    <td>100.-</td>
-                    <td>100.-</td>
-                </tr>
-            </tbody>
-        </table>
+                
                 <!--Zensko sisanje-->
                 <table id="zenskoSisanje" class="tabela table responsive" style="overflow-x:auto;">
                     <thead>
@@ -257,22 +231,47 @@
                     <td>3200.-</td>
                 </tr>
                 <tr>
-                    <td>Žensko feniranje + pranje sa masažom glave + nega + styling proizvodi - kratka kosa</td>
+                    <td>Decije zensko šišanje + feniranje</td>
+                    <td>2300.-</td>
+                    <td>1800.-</td>
+                </tr>
+                <tr>
+                    <td>Žensko feniranje - kratka kosa</td>
                     <td>1000.-</td>
                     <td>1000.-</td>
                 </tr>
                 <tr>
-                    <td>Žensko feniranje + pranje sa masažom glave + nega + styling proizvodi - srednja kosa</td>
+                    <td>Žensko feniranje - srednja kosa</td>
                     <td>1300.-</td>
                     <td>1300.-</td>
                 </tr>
                 <tr>
-                    <td>Žensko feniranje + pranje sa masažom glave + nega + styling proizvodi - duga kosa</td>
+                    <td>Žensko feniranje - duga kosa</td>
                     <td>1500.-</td>
                     <td>1500.-</td>
                 </tr>
             </tbody>
         </table>
+        <table id="nadogradnja" class="tabela table responsive" style="overflow-x:auto;">
+            <thead>
+                <tr id="prvi">
+                    <th></th>
+                    <th scope="col">
+                        <p class="ime">Ruzica</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+        <tr>
+            <td>Nadogradnja kose: ( sa donetom kosom) - do 50 pramenova po komadu</td>
+            <td>250.-</td>
+        </tr>
+        <tr>
+            <td>Nadogradnja kose: ( sa donetom kosom) - posle 50-tog pramena po komadu:</td>
+            <td>100.-</td>
+        </tr>
+    </tbody>
+</table>
                 <!--Hemijski tretmani-->
                 <table id="hemijskiTretmani" class="tabela table responsive" style="overflow-x:auto;">
                     <thead>
@@ -303,17 +302,17 @@
                     <td>14500.-</td>
                 </tr>
                 <tr>
-                    <td>MINI-VAL- keratinski + zaštita kose + feniranje + nega + styling - kratka kosa</td>
+                    <td>MINI-VAL - keratinski - kratka kosa</td>
                     <td>6000.-</td>
                     <td>6000.-</td>
                 </tr>
                 <tr>
-                    <td>MINI-VAL- keratinski + zaštita kose + feniranje + nega + styling - srednja kosa</td>
+                    <td>MINI-VAL - keratinski - srednja kosa</td>
                     <td>8000.-</td>
                     <td>8000.-</td>
                 </tr>
                 <tr>
-                    <td>MINI-VAL- keratinski + zaštita kose + feniranje + nega + styling - duga kosa</td>
+                    <td>MINI-VAL - keratinski - duga kosa</td>
                     <td>10000.-</td>
                     <td>10000.-</td>
                 </tr>
@@ -326,10 +325,7 @@
                         <tr id="prvi">
                             <th></th>
                             <th scope="col">
-                                <p class="ime">Marko</p>
-                            </th>
-                            <th scope="col">
-                                <p class="ime">Stefan</p>
+                                <p class="ime"></p>
                             </th>
                         </tr>
                     </thead>
@@ -337,57 +333,46 @@
                 <tr>
                     <td>Koriščenje Olaplexa 1ml </td>
                     <td>180.-</td>
-                    <td>180.-</td>
                 </tr>
                 <tr>
                     <td>Koriščenje amino-komplex 1ml </td>
-                    <td>150.-</td>
                     <td>150.-</td>
                 </tr>
                 <tr>
                     <td>Intenzivni tretmani kose - Olaplex - kratka kosa</td>
                     <td>2500.-</td>
-                    <td>2500.-</td>
                 </tr>
                 <tr>
                     <td>Intenzivni tretmani kose - Olaplex - srednja kosa</td>
-                    <td>3500.-</td>
                     <td>3500.-</td>
                 </tr>
                 <tr>
                     <td>Intenzivni tretmani kose - Olaplex - duga kosa</td>
                     <td>4500.-</td>
-                    <td>4500.-</td>
                 </tr>
                 <tr>
                     <td>Intenzivni tretmani kose - Aminokoplex - kratka kosa</td>
-                    <td>2500.-</td>
                     <td>2500.-</td>
                 </tr>
                 <tr>
                     <td>Intenzivni tretmani kose - Aminokoplex - srednja kosa</td>
                     <td>3500.-</td>
-                    <td>3500.-</td>
                 </tr>
                 <tr>
                     <td>Intenzivni tretmani kose - Aminokoplex - duga kosa</td>
-                    <td>4500.-</td>
                     <td>4500.-</td>
                 </tr>
                 <tr>
                     <td>Sistem intenzivne nege kose sa olaplexom od 4 dolaska - kratka kosa</td>
                     <td>8000.-</td>
-                    <td>8000.-</td>
                 </tr>
                 <tr>
                     <td>Sistem intenzivne nege kose sa olaplexom od 4 dolaska - srednja kosa</td>
-                    <td>11000.-</td>
-                    <td>11000.-</td>
+                    <td>10000.-</td>
                 </tr>
                 <tr>
                     <td>Sistem intenzivne nege kose sa olaplexom od 4 dolaska - duga kosa</td>
-                    <td>15000.-</td>
-                    <td>15000.-</td>
+                    <td>12000.-</td>
                 </tr>
 
                 <!--Zene farbanje-->
@@ -396,7 +381,7 @@
                         <tr id="prvi">
                             <th></th>
                             <th scope="col">
-                                <p class="ime">Marko</p>
+                                <p class="ime">Ruzica</p>
                             </th>
                             <th scope="col">
                                 <p class="ime">Stefan</p>
@@ -405,19 +390,24 @@
                     </thead>
                     <tbody>
                 <tr>
-                    <td>Farbanje izrasta + preliv ostatka + feniranje + nega + styling proizvodi - kratka kosa</td>
-                    <td>4500.-</td>
-                    <td>4500.-</td>
+                    <td>Farbanje izrasta</td>
+                    <td>3000.-</td>
+                    <td>3000.-</td>
                 </tr>
                 <tr>
-                    <td>Farbanje izrasta + preliv ostatka + feniranje+nega + styling proizvodi - srednja kosa</td>
-                    <td>5000.-</td>
-                    <td>5000.-</td>
+                    <td>Preliv ostatka - kratka kosa</td>
+                    <td>1800.-</td>
+                    <td>1500.-</td>
                 </tr>
                 <tr>
-                    <td>Farbanje izrasta + preliv ostatka + feniranje + nega + styling proizvodi - duga kosa</td>
-                    <td>5600.-</td>
-                    <td>5600.-</td>
+                    <td>Preliv ostatka - srednja kosa</td>
+                    <td>2000.-</td>
+                    <td>2000.-</td>
+                </tr>
+                <tr>
+                    <td>Preliv ostatka - duga kosa</td>
+                    <td>2000.-</td>
+                    <td>2000.-</td>
                 </tr>
                 <tr>
                     <td>Promene boje skidanje stare boje + izrada nove boje + intenzivna nega + feniranje + zaštita kose + styling - kratka kosa</td>
@@ -434,21 +424,42 @@
                     <td>14500.-</td>
                     <td>14500.-</td>
                 </tr>
-
+                <tr>
+                    <td>Aktuelne tehnike pramenovi - balejaž - nijansiranje + preliv + nega + zaštita + feniranje + styling - kratka kosa</td>
+                    <td>6600.-</td>
+                    <td>6600.-</td>
+                </tr>
+                <tr>
+                    <td>Aktuelne tehnike pramenovi - balejaž - nijansiranje + preliv + nega + zaštita + feniranje + styling - srednja kosa</td>
+                    <td>8100.-</td>
+                    <td>8100.-</td>
+                </tr>
+                <tr>
+                    <td>Aktuelne tehnike pramenovi - balejaž - nijansiranje + preliv + nega + zaštita + feniranje + styling - duga kosa</td>
+                    <td>9600.-</td>
+                    <td>9600.-</td>
+                </tr>
+            </tbody>
+        </table>
                 <!--zene kombinacija-->
                 <table id="zenskaKombinacija" class="tabela table responsive" style="overflow-x:auto;">
                     <thead>
                         <tr id="prvi">
                             <th></th>
                             <th scope="col">
-                                <p class="ime">Marko</p>
+                                <p class="ime">Marko/Ruzica</p>
                             </th>
                             <th scope="col">
-                                <p class="ime">Stefan</p>
+                                <p class="ime">Stefan/Ruzica</p>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
+                        <tr>
+                            <td>Farbanje izrasta sa šišanjem</td>
+                            <td>5600.-</td>
+                            <td>5300.-</td>
+                        </tr>
                 <tr>
                     <td>Aktuelne tehnike pramenovi - balejaž - nijansiranje + preliv + nega + zaštita + feniranje + styling sa šišanjem - kratka kosa</td>
                     <td>9200.-</td>
