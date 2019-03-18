@@ -71,7 +71,7 @@
             
             <div class="container">
                 <h1 id="cenovnik">Cenovnik</h1>
-                <div class="btn-group btn-group-justified responsive" id="cenovnikMeni" role="group" aria-label="...">
+                <div class="btn-group btn-group-vertical responsive" id="cenovnikMeni" role="group" aria-label="...">
                     <div class="btn-group" role="group">
                         <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Šišanje
@@ -106,6 +106,30 @@
                       </ul>
                     </div>
                   </div>
+                    <div id="cenovnikMeni1" class="responsive">
+                      <ul class="main-nav-ul">
+                          <li class="has-sub"><a href="">Šišanje <span class="sub-arrow"></span></a>
+                              <ul>
+                                  <li><a href="#" onclick="show('zenskoSisanje');">Dame</a></li>
+                                  <li><a href="#" onclick="show('muskoSisanje');">Gospoda</a></li>
+                              </ul>
+                          </li>
+                          <li class="has-sub"><a href="">Farbanje<span class="sub-arrow"></span></a>
+                            <ul>
+                                <li><a href="#" onclick="show('zenskoFarbanje');">Dame</a></li>
+                                <li><a href="#" onclick="show('muskoFarbanje');">Gospoda</a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""onclick="show('hemijskiTretmani');">Hemijski tretmani</a></li>
+                        <li><a href=""onclick="show('nega');">Nega</a></li>
+                        <li class="has-sub"><a href="">Tretmani + Šišanje<span class="sub-arrow"></span></a>
+                            <ul>
+                                <li><a href="#" onclick="show('zenskaKombinacija');">Dame</a></li>
+                                <li><a href="#" onclick="show('muskaKombinacija');">Gospoda</a></li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </div>
                 <!--musko sisanje-->
                 
                 <table id="muskoSisanje" class="tabela table responsive" style="overflow-x:auto;">

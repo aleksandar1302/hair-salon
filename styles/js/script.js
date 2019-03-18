@@ -1,3 +1,18 @@
+var myIndex = 0;
+  carousel();
+  
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+}
+    myIndex++;
+if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+
 $(document).ready(function (){
     $("#oNama").click(function (){
         $('html, body').animate({
@@ -23,32 +38,15 @@ $(document).ready(function (){
         }, 2000);
     });
 }); 
+$(document).ready(function(e){
+    $('.has-sub').click(function(){
+        $(this).toggleClass('tap');
+    });
+});
 
 $(".nav li").on("click", function() {
     $(".nav li").removeClass("active");
     $(this).addClass("active");
   });
 
-  var myIndex = 0;
-  carousel();
   
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 9000);    
-  }
-
-function prikazMfriz(){
-    var x=document.getElementById('muskiSis');
-    x.classList.toggle('hidden');
-}
-function prikazMfar(){
-    var x=document.getElementById('muskiFar');
-    x.classList.toggle('hidden');
-}
