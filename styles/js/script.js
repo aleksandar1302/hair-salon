@@ -39,8 +39,13 @@ $(document).ready(function (){
     });
 }); 
 $(document).ready(function(e){
-    $('.has-sub').click(function(){
-        $(this).toggleClass('tap');
+    $('#sisanjeMeni').click(function(){
+        if($('sisanjeMeni').hasClass('hidden')){
+            $('sisanjeMeni').removeClass('hidden');
+        }
+        else{
+            $('sisanjeMeni').addClass('hidden');
+        }
     });
 });
 

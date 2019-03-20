@@ -24,7 +24,7 @@
             document.getElementById("muskaKombinacija").classList.add('hidden');
             document.getElementById("zenskaKombinacija").classList.add('hidden');
             document.getElementById("nadogradnja").classList.add('hidden');
-            document.getElementById('legenda').classList.add('hidden');  
+            document.getElementById('legenda').classList.add('hidden');
             }
             function show(elementId) { 
                 hideAll();
@@ -32,6 +32,41 @@
                 document.getElementById('legenda').classList.remove('hidden');
                 if(elementId==='zenskoSisanje'){
                     document.getElementById('nadogradnja').classList.remove('hidden');
+                }
+            }
+            function sakrijSve(){
+                document.getElementById('farbanjeMeni').classList.add('hidden');
+                document.getElementById('sisanjeMeni').classList.add('hidden');
+                document.getElementById('kombinacijeMeni').classList.add('hidden');
+            }
+            function myFunction1() {
+                sakrijSve();
+                var element1 = document.getElementById("sisanjeMeni");
+                if(element1.classList.contains('hidden')){
+                    element1.classList.remove('hidden');
+                }
+                else{
+                    element1.classList.add('hidden');
+                }
+            }
+            function myFunction2() {
+                sakrijSve();
+                var element2 = document.getElementById("farbanjeMeni");
+                if(element2.classList.contains('hidden')){
+                    element2.classList.remove('hidden');
+                }
+                else{
+                    element2.classList.add('hidden');
+                }
+            }
+            function myFunction3() {
+                sakrijSve();
+                var element = document.getElementById("kombinacijeMeni");
+                if(element.classList.contains('hidden')){
+                    element.classList.remove('hidden');
+                }
+                else{
+                    element.classList.add('hidden');
                 }
             }
             </script>
@@ -73,63 +108,39 @@
                 <h1 id="cenovnik">Cenovnik</h1>
                 <div class="btn-group btn-group-vertical responsive" id="cenovnikMeni" role="group" aria-label="...">
                     <div class="btn-group" role="group">
-                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a type="button" onclick="myFunction1()"class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Šišanje
                           <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#" onclick="show('zenskoSisanje');">Dame</a></li>
-                          <li><a href="#" onclick="show('muskoSisanje');">Gospoda</a></li>
+                        <ul class="btn btn-default dropdown-menu" id="sisanjeMeni">
+                          <li><a href="#" class="btn btn-default btn-group" onclick="show('zenskoSisanje');">Dame</a></li>
+                          <li><a href="#" class="btn btn-default btn-group" onclick="show('muskoSisanje');">Gospoda</a></li>
                         </ul>
                     </div>
                     <div class="btn-group" role="group">
-                        <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a type="button" class="btn btn-default dropdown-toggle"onclick="myFunction2();" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Kolor
                           <span class="caret"></span>
                         </a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#" onclick="show('zenskoFarbanje');">Dame</a></li>
-                          <li><a href="#" onclick="show('muskoFarbanje');">Gospoda</a></li>
+                        <ul class="btn btn-default dropdown-menu" id="farbanjeMeni">
+                          <li><a href="#" class="btn btn-default btn-group" role="group" onclick="show('zenskoFarbanje');">Dame</a></li>
+                          <li><a href="#" class="btn btn-default btn-group" role="group" onclick="show('muskoFarbanje');">Gospoda</a></li>
                         </ul>
                     </div>
                     <a type="button" class="btn btn-default btn-group" role="group" onclick="show('hemijskiTretmani');">Hemijski Tretmani</a>
                     <a type="button" class="btn btn-default btn-group" role="group" onclick="show('nega')">Nega</a>
                   
                     <div class="btn-group" role="group">
-                      <a type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a type="button" onclick="myFunction3()"class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Tretmani + Šišanje
                         <span class="caret"></span>
                       </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#" onclick="show('zenskaKombinacija')">Dame</a></li>
-                        <li><a href="#" onclick="show('muskaKombinacija')">Gospoda</a></li>
+                      <ul class="btn btn-default dropdown-menu" id="kombinacijeMeni">
+                        <li><a href="#" class="btn btn-default btn-group" onclick="show('zenskaKombinacija')">Dame</a></li>
+                        <li><a href="#" class="btn btn-default btn-group" onclick="show('muskaKombinacija')">Gospoda</a></li>
                       </ul>
                     </div>
                   </div>
-                    <div id="cenovnikMeni1" class="responsive">
-                      <ul class="main-nav-ul">
-                          <li class="has-sub"><a href="">Šišanje <span class="sub-arrow"></span></a>
-                              <ul>
-                                  <li><a href="#" onclick="show('zenskoSisanje');">Dame</a></li>
-                                  <li><a href="#" onclick="show('muskoSisanje');">Gospoda</a></li>
-                              </ul>
-                          </li>
-                          <li class="has-sub"><a href="">Farbanje<span class="sub-arrow"></span></a>
-                            <ul>
-                                <li><a href="#" onclick="show('zenskoFarbanje');">Dame</a></li>
-                                <li><a href="#" onclick="show('muskoFarbanje');">Gospoda</a></li>
-                            </ul>
-                        </li>
-                        <li><a href=""onclick="show('hemijskiTretmani');">Hemijski tretmani</a></li>
-                        <li><a href=""onclick="show('nega');">Nega</a></li>
-                        <li class="has-sub"><a href="">Tretmani + Šišanje<span class="sub-arrow"></span></a>
-                            <ul>
-                                <li><a href="#" onclick="show('zenskaKombinacija');">Dame</a></li>
-                                <li><a href="#" onclick="show('muskaKombinacija');">Gospoda</a></li>
-                            </ul>
-                        </li>
-                      </ul>
-                    </div>
                 <!--musko sisanje-->
                 
                 <table id="muskoSisanje" class="tabela table responsive" style="overflow-x:auto;">
@@ -560,9 +571,9 @@
             <script src="https://code.jquery.com/jquery-3.3.1.js"integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-            <script src="styles/js/script.js"></script>
             <script type="text/javascript">
                 hideAll();
+                sakrijSve();
             </script>
         </body>
     </html>
