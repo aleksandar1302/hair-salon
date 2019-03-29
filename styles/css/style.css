@@ -148,12 +148,32 @@ html, body{
 }
 .listContact{
     list-style: none;
-    margin-top:3%;
-    
+    margin-top:7%;
+    margin-left:25%;
+    width:80%;
+    margin-bottom: 3%;
 }
-
+#posl{
+    margin-right: 0%;
+}
 .listContact a i{
     margin-right: 5%;
+}
+.listContact a:hover{
+    text-decoration: none;
+    color:#680000
+}
+.listContact a:focus{
+    text-decoration: none;
+    color:#680000
+}
+#kontakt ul li a:hover{
+    text-decoration: none;
+    color:#680000;
+}
+#kontakt ul li a:focus{
+    text-decoration: none;
+    color:#680000;
 }
 
 .carousel-control.left, 
@@ -439,4 +459,7 @@ h3{
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
+}
+.pull-left{
+    margin-left: 5%;
 }
