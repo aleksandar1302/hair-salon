@@ -159,6 +159,10 @@ html, body{
 .listContact a i{
     margin-right: 5%;
 }
+.listContact a{
+    text-decoration: none;
+    color:#680000;
+}
 .listContact a:hover{
     text-decoration: none;
     color:#680000
@@ -172,6 +176,10 @@ html, body{
     color:#680000;
 }
 #kontakt ul li a:focus{
+    text-decoration: none;
+    color:#680000;
+}
+#kontakt ul li a{
     text-decoration: none;
     color:#680000;
 }
@@ -429,6 +437,9 @@ h3{
 .btn-group{
     width:100%;
 }
+.btn{
+    font-size: 16px;
+}
 #cenovnikMeni1{
     width:80%;
     margin:5% 10%;
@@ -463,3 +474,4 @@ h3{
 .pull-left{
     margin-left: 5%;
 }
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
