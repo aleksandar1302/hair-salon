@@ -30,6 +30,7 @@
                 hideAll();
                 document.getElementById(elementId).classList.remove('hidden');
                 document.getElementById('legenda').classList.remove('hidden');
+                sakrijSve();
                 if(elementId==='zenskoSisanje'){
                     document.getElementById('nadogradnja').classList.remove('hidden');
                 }
@@ -40,34 +41,17 @@
                 document.getElementById('kombinacijeMeni').classList.add('hidden');
             }
             function myFunction1() {
-                sakrijSve();
+                
                 var element1 = document.getElementById("sisanjeMeni");
-                if(element1.classList.contains('hidden')){
-                    element1.classList.remove('hidden');
-                }
-                else{
-                    element1.classList.add('hidden');
-                }
+                element1.classList.toggle('hidden');
             }
             function myFunction2() {
-                sakrijSve();
                 var element2 = document.getElementById("farbanjeMeni");
-                if(element2.classList.contains('hidden')){
-                    element2.classList.remove('hidden');
-                }
-                else{
-                    element2.classList.add('hidden');
-                }
+                element2.classList.toggle('hidden');
             }
             function myFunction3() {
-                sakrijSve();
-                var element = document.getElementById("kombinacijeMeni");
-                if(element.classList.contains('hidden')){
-                    element.classList.remove('hidden');
-                }
-                else{
-                    element.classList.add('hidden');
-                }
+                var element3 = document.getElementById("kombinacijeMeni");
+                element3.classList.toggle('hidden');
             }
             </script>
     </head>
@@ -109,7 +93,7 @@
                 </div>
                 <div class="btn-group btn-group-vertical responsive" id="cenovnikMeni" role="group" aria-label="...">
                     <div class="btn-group" role="group">
-                        <a type="button" onclick="myFunction1()"class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a type="button" onclick="myFunction1();"class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Šišanje
                           <span class="caret"></span>
                         </a>
@@ -132,7 +116,7 @@
                     <a type="button" class="btn btn-default btn-group" role="group" onclick="show('nega')">Nega</a>
                   
                     <div class="btn-group" role="group">
-                      <a type="button" onclick="myFunction3()"class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <a type="button" onclick="myFunction3();"class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Tretmani + Šišanje
                         <span class="caret"></span>
                       </a>
