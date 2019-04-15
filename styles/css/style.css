@@ -494,25 +494,4 @@ h3{
 .pull-left{
     margin-left: 5%;
 }
-.dropdown-toggle a:hover{
-    outline: none;
-}
-.dropdown-toggle a:focus{
-    outline: none;
-}
-.dropdown-toggle a:checked{
-    outline: none;
-}
-.dropdown-toggle a:focus{
-    outline: none;
-}
-.dropdown-toggle a:active{
-    outline: none;
-}
-.dropdown-toggle a:after{
-    outline: none;
-}
-.dropdown-toggle a:before{
-    outline: none;
-}
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
