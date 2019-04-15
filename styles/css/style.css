@@ -112,34 +112,42 @@ html, body{
 
 .navbar-default .navbar-nav>.active>a{
     color:#680000;
+    outline: none;
 }
 
 .navbar-default .navbar-nav>li>a{
     color:#680000;
+    outline: none;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
     color:#680000;
+    outline: none;
 }
 
 .navbar-default .navbar-nav>li>a:focus{
     color:#680000;
+    outline: none;
 }
 
 .navbar-default .navbar-nav>li>a:checked{
     color:#680000;
+    outline: none;
 }
 
 .navbar-default .navbar-nav>.active>a:hover{
     color:#680000;
+    outline: none;
 }
 
 .navbar-default .navbar-nav>.active>a:checked{
     color:#680000;
+    outline: none;
 }
 
 .navbar-default .navbar-nav>.active>a:focus{
     color:#680000;
+    outline: none;
 }
 
 .thumbnail img{
@@ -166,23 +174,28 @@ html, body{
 }
 .listContact a:hover{
     text-decoration: none;
-    color:#680000
+    color:#680000;
+    outline: none;
 }
 .listContact a:focus{
     text-decoration: none;
-    color:#680000
+    color:#680000;
+    outline: none;
 }
 #kontakt ul li a:hover{
     text-decoration: none;
     color:#680000;
+    outline: none;
 }
 #kontakt ul li a:focus{
     text-decoration: none;
     color:#680000;
+    outline: none;
 }
 #kontakt ul li a{
     text-decoration: none;
     color:#680000;
+    outline: none;
 }
 
 .carousel-control.left, 
@@ -476,8 +489,30 @@ h3{
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
+    outline:none;
 }
 .pull-left{
     margin-left: 5%;
+}
+.dropdown-toggle a:hover{
+    outline: none;
+}
+.dropdown-toggle a:focus{
+    outline: none;
+}
+.dropdown-toggle a:checked{
+    outline: none;
+}
+.dropdown-toggle a:focus{
+    outline: none;
+}
+.dropdown-toggle a:active{
+    outline: none;
+}
+.dropdown-toggle a:after{
+    outline: none;
+}
+.dropdown-toggle a:before{
+    outline: none;
 }
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
