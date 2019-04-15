@@ -11,6 +11,7 @@ html, body{
 	font-style: normal;
     font-size: 1.15 em;
     line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 .content{
