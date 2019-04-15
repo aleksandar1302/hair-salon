@@ -211,6 +211,11 @@ html, body{
     text-align: center;
     font-size: 1.8em;
 }
+.ime2{
+    text-align: center;
+    font-size: 1.8em;
+    visibility: hidden;
+}
 
 
 #legenda{
