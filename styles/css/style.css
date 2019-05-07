@@ -495,3 +495,29 @@ h3{
     margin-left: 5%;
 }
 .w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+#forma{
+    margin-bottom: 2%;
+}
+#btnFormaSubmit{
+    background-color: #680000;
+    color: #fff;
+}
+.kontaktInfo{
+    margin-bottom: 10%;
+}
+.inputi{
+    width: 60%;
+
+}
+input[type=text]{
+    color:#680000;
+}
+input[type=text]:focus{
+    border-color: #680000;
+}
+input[type=email]{
+    color:#680000;
+}
+input[type=email]:focus{
+    border-color: #680000;
+}
