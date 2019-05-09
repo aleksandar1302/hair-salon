@@ -521,3 +521,11 @@ input[type=email]{
 input[type=email]:focus{
     border-color: #680000;
 }
+#btnZakazi{
+    background-color: #680000;
+    color:#fff;
+}
+.zakazivanje{
+    text-align: center;
+    margin:5% 0;
+}
