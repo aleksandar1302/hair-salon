@@ -197,6 +197,21 @@ html, body{
     color:#680000;
     outline: none;
 }
+#kontakt ul .linkovi{
+    text-decoration: none;
+    color:blue;
+    outline: none;
+}
+#kontakt ul .linkovi:focus{
+    text-decoration: none;
+    color:blue;
+    outline: none;
+}
+#kontakt ul .linkovi:hover{
+    text-decoration: none;
+    color:blue;
+    outline: none;
+}
 
 .carousel-control.left, 
 .carousel-control.right {
@@ -524,6 +539,7 @@ input[type=email]:focus{
 #btnZakazi{
     background-color: #680000;
     color:#fff;
+    font-size:22px;
 }
 .zakazivanje{
     text-align: center;
